@@ -424,19 +424,19 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5FEAB68E
-P 7450 4350
-F 0 "J1" H 7558 4631 50  0000 C CNN
-F 1 "SWD" H 7558 4540 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7450 4350 50  0001 C CNN
-F 3 "~" H 7450 4350 50  0001 C CNN
-	1    7450 4350
+P 5000 1200
+F 0 "J1" H 5108 1481 50  0000 C CNN
+F 1 "SWD" H 5108 1390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5000 1200 50  0001 C CNN
+F 3 "~" H 5000 1200 50  0001 C CNN
+	1    5000 1200
 	1    0    0    -1  
 $EndComp
 Text Label 1800 4800 2    50   ~ 0
 SWCLK
 Text Label 1800 4900 2    50   ~ 0
 SWDIO
-Text Notes 7000 5500 0    100  ~ 0
+Text Notes 2350 7550 0    100  ~ 0
 ESP32-WROOM32 vs nRF51\nchip_pu = nRST/SWDIO\nNC = SWCLK\nIO16 RX = P0.11\nIO17 TX = P0.09
 Text Label 1800 2800 2    50   ~ 0
 P0.00
@@ -540,131 +540,131 @@ Wire Wire Line
 	4200 5400 4450 5400
 Wire Wire Line
 	4450 5500 4600 5500
-Text Label 7650 4250 0    50   ~ 0
+Text Label 5200 1100 0    50   ~ 0
 SWCLK
-Text Label 7650 4350 0    50   ~ 0
+Text Label 5200 1200 0    50   ~ 0
 SWDIO
 $Comp
 L power:GND #PWR0102
 U 1 1 5FEB7E7F
-P 7650 4450
-F 0 "#PWR0102" H 7650 4200 50  0001 C CNN
-F 1 "GND" V 7655 4322 50  0000 R CNN
-F 2 "" H 7650 4450 50  0001 C CNN
-F 3 "" H 7650 4450 50  0001 C CNN
-	1    7650 4450
+P 5200 1300
+F 0 "#PWR0102" H 5200 1050 50  0001 C CNN
+F 1 "GND" V 5205 1172 50  0000 R CNN
+F 2 "" H 5200 1300 50  0001 C CNN
+F 3 "" H 5200 1300 50  0001 C CNN
+	1    5200 1300
 	0    -1   -1   0   
 $EndComp
-Text Label 7650 4550 0    50   ~ 0
+Text Label 5200 1400 0    50   ~ 0
 VCC_nRF
 Wire Wire Line
 	3700 1500 3700 1700
 $Comp
-L zsun-lib:nRF51822-WROOM-32 U2
+L nrf51x22_qfax_dcdc-rescue:nRF51822-WROOM-32-zsun-lib U2
 U 1 1 5FE8DF5A
-P 8850 2850
-F 0 "U2" H 8850 4431 50  0000 C CNN
-F 1 "nRF51822-WROOM-32" H 8850 4340 50  0000 C CNN
-F 2 "zsun-symbols:nRF51822-WROOM-32D" H 8850 1350 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 8550 2900 50  0001 C CNN
-	1    8850 2850
+P 8350 2850
+F 0 "U2" H 8350 4431 50  0000 C CNN
+F 1 "nRF51822-WROOM-32" H 8350 4340 50  0000 C CNN
+F 2 "zsun-symbols:nRF51822-WROOM-32D" H 8350 1350 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 8050 2900 50  0001 C CNN
+	1    8350 2850
 	1    0    0    -1  
 $EndComp
-Text Label 8250 1650 2    50   ~ 0
+Text Label 7750 1650 2    50   ~ 0
 SWDIO
-Text Label 8850 1450 1    50   ~ 0
+Text Label 8350 1450 1    50   ~ 0
 AVDD
 $Comp
 L power:GND #PWR0103
 U 1 1 5FEABCF0
-P 8850 4250
-F 0 "#PWR0103" H 8850 4000 50  0001 C CNN
-F 1 "GND" H 8855 4077 50  0000 C CNN
-F 2 "" H 8850 4250 50  0001 C CNN
-F 3 "" H 8850 4250 50  0001 C CNN
-	1    8850 4250
+P 8350 4250
+F 0 "#PWR0103" H 8350 4000 50  0001 C CNN
+F 1 "GND" H 8355 4077 50  0000 C CNN
+F 2 "" H 8350 4250 50  0001 C CNN
+F 3 "" H 8350 4250 50  0001 C CNN
+	1    8350 4250
 	1    0    0    -1  
 $EndComp
-Text Label 9450 3050 0    50   ~ 0
+Text Label 8950 3050 0    50   ~ 0
 P0.11
-Text Label 9450 2950 0    50   ~ 0
+Text Label 8950 2950 0    50   ~ 0
 P0.09
-Text Label 9450 2550 0    50   ~ 0
+Text Label 8950 2550 0    50   ~ 0
 SWCLK
-Text Label 8250 2250 2    50   ~ 0
+Text Label 7750 2250 2    50   ~ 0
 P0.00
-Text Label 8250 2350 2    50   ~ 0
+Text Label 7750 2350 2    50   ~ 0
 P0.01
-Text Label 8250 2550 2    50   ~ 0
+Text Label 7750 2550 2    50   ~ 0
 P0.02
-Text Label 8250 2650 2    50   ~ 0
+Text Label 7750 2650 2    50   ~ 0
 P0.03
-Text Label 8250 2750 2    50   ~ 0
+Text Label 7750 2750 2    50   ~ 0
 P0.04
-Text Label 8250 2850 2    50   ~ 0
+Text Label 7750 2850 2    50   ~ 0
 P0.05
-Text Label 8250 2950 2    50   ~ 0
+Text Label 7750 2950 2    50   ~ 0
 P0.06
-Text Label 8250 3050 2    50   ~ 0
+Text Label 7750 3050 2    50   ~ 0
 P0.07
-Text Label 8250 3150 2    50   ~ 0
+Text Label 7750 3150 2    50   ~ 0
 P0.08
-Text Label 8250 3600 2    50   ~ 0
+Text Label 7750 3600 2    50   ~ 0
 P0.10
-Text Label 8250 3700 2    50   ~ 0
+Text Label 7750 3700 2    50   ~ 0
 P0.12
-Text Label 8250 3800 2    50   ~ 0
+Text Label 7750 3800 2    50   ~ 0
 P0.13
-Text Label 8250 3900 2    50   ~ 0
+Text Label 7750 3900 2    50   ~ 0
 P0.14
-Text Label 8250 4000 2    50   ~ 0
+Text Label 7750 4000 2    50   ~ 0
 P0.15
-Text Label 9450 3950 0    50   ~ 0
+Text Label 8950 3950 0    50   ~ 0
 P0.16
-Text Label 9450 3850 0    50   ~ 0
+Text Label 8950 3850 0    50   ~ 0
 P0.17
-Text Label 9450 3750 0    50   ~ 0
+Text Label 8950 3750 0    50   ~ 0
 P0.18
-Text Label 9450 3650 0    50   ~ 0
+Text Label 8950 3650 0    50   ~ 0
 P0.19
-Text Label 8250 1950 2    50   ~ 0
+Text Label 7750 1950 2    50   ~ 0
 P0.30
-Text Label 8250 1850 2    50   ~ 0
+Text Label 7750 1850 2    50   ~ 0
 P0.29
-Text Label 9450 3250 0    50   ~ 0
+Text Label 8950 3250 0    50   ~ 0
 P0.20
-Text Label 9450 3150 0    50   ~ 0
+Text Label 8950 3150 0    50   ~ 0
 P0.21
-Text Label 9450 2850 0    50   ~ 0
+Text Label 8950 2850 0    50   ~ 0
 P0.22
-Text Label 9450 2750 0    50   ~ 0
+Text Label 8950 2750 0    50   ~ 0
 P0.23
-Text Label 9450 2650 0    50   ~ 0
+Text Label 8950 2650 0    50   ~ 0
 P0.24
-Text Label 9450 2450 0    50   ~ 0
+Text Label 8950 2450 0    50   ~ 0
 P0.25
-Text Label 9450 2350 0    50   ~ 0
+Text Label 8950 2350 0    50   ~ 0
 P0.28
 $Comp
 L power:GND #PWR0104
 U 1 1 5FEFCCD4
-P 8250 3450
-F 0 "#PWR0104" H 8250 3200 50  0001 C CNN
-F 1 "GND" V 8255 3322 50  0000 R CNN
-F 2 "" H 8250 3450 50  0001 C CNN
-F 3 "" H 8250 3450 50  0001 C CNN
-	1    8250 3450
+P 7750 3450
+F 0 "#PWR0104" H 7750 3200 50  0001 C CNN
+F 1 "GND" V 7755 3322 50  0000 R CNN
+F 2 "" H 7750 3450 50  0001 C CNN
+F 3 "" H 7750 3450 50  0001 C CNN
+	1    7750 3450
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5FEFD231
-P 9450 1850
-F 0 "#PWR0105" H 9450 1600 50  0001 C CNN
-F 1 "GND" V 9455 1722 50  0000 R CNN
-F 2 "" H 9450 1850 50  0001 C CNN
-F 3 "" H 9450 1850 50  0001 C CNN
-	1    9450 1850
+P 8950 1850
+F 0 "#PWR0105" H 8950 1600 50  0001 C CNN
+F 1 "GND" V 8955 1722 50  0000 R CNN
+F 2 "" H 8950 1850 50  0001 C CNN
+F 3 "" H 8950 1850 50  0001 C CNN
+	1    8950 1850
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -785,4 +785,242 @@ Wire Wire Line
 	4800 2800 5100 2800
 Connection ~ 4800 3000
 Connection ~ 4800 3400
+$Comp
+L nrf51x22_qfax_dcdc-rescue:nRF51822-WROOM-32-zsun-lib U3
+U 1 1 5FEFE25A
+P 10250 2750
+F 0 "U3" H 10250 4331 50  0000 C CNN
+F 1 "nRF51822-WROOM-32" H 10250 4240 50  0000 C CNN
+F 2 "zsun-symbols:nRF51822-WROOM-32D" H 10250 1250 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 9950 2800 50  0001 C CNN
+	1    10250 2750
+	1    0    0    -1  
+$EndComp
+Text Label 9650 1550 2    50   ~ 0
+SWDIO
+Text Label 10250 1350 1    50   ~ 0
+AVDD
+$Comp
+L power:GND #PWR0107
+U 1 1 5FEFE5F6
+P 10250 4150
+F 0 "#PWR0107" H 10250 3900 50  0001 C CNN
+F 1 "GND" H 10255 3977 50  0000 C CNN
+F 2 "" H 10250 4150 50  0001 C CNN
+F 3 "" H 10250 4150 50  0001 C CNN
+	1    10250 4150
+	1    0    0    -1  
+$EndComp
+Text Label 10850 2950 0    50   ~ 0
+P0.11
+Text Label 10850 2850 0    50   ~ 0
+P0.09
+Text Label 10850 2450 0    50   ~ 0
+SWCLK
+Text Label 9650 2150 2    50   ~ 0
+P0.00
+Text Label 9650 2250 2    50   ~ 0
+P0.01
+Text Label 9650 2450 2    50   ~ 0
+P0.02
+Text Label 9650 2550 2    50   ~ 0
+P0.03
+Text Label 9650 2650 2    50   ~ 0
+P0.04
+Text Label 9650 2750 2    50   ~ 0
+P0.05
+Text Label 9650 2850 2    50   ~ 0
+P0.06
+Text Label 9650 2950 2    50   ~ 0
+P0.07
+Text Label 9650 3050 2    50   ~ 0
+P0.08
+Text Label 9650 3500 2    50   ~ 0
+P0.10
+Text Label 9650 3600 2    50   ~ 0
+P0.12
+Text Label 9650 3700 2    50   ~ 0
+P0.13
+Text Label 9650 3800 2    50   ~ 0
+P0.14
+Text Label 9650 3900 2    50   ~ 0
+P0.15
+Text Label 10850 3850 0    50   ~ 0
+P0.16
+Text Label 10850 3750 0    50   ~ 0
+P0.17
+Text Label 10850 3650 0    50   ~ 0
+P0.18
+Text Label 10850 3550 0    50   ~ 0
+P0.19
+Text Label 9650 1850 2    50   ~ 0
+P0.30
+Text Label 9650 1750 2    50   ~ 0
+P0.29
+Text Label 10850 3150 0    50   ~ 0
+P0.20
+Text Label 10850 3050 0    50   ~ 0
+P0.21
+Text Label 10850 2750 0    50   ~ 0
+P0.22
+Text Label 10850 2650 0    50   ~ 0
+P0.23
+Text Label 10850 2550 0    50   ~ 0
+P0.24
+Text Label 10850 2350 0    50   ~ 0
+P0.25
+Text Label 10850 2250 0    50   ~ 0
+P0.28
+$Comp
+L power:GND #PWR0108
+U 1 1 5FEFE61E
+P 9650 3350
+F 0 "#PWR0108" H 9650 3100 50  0001 C CNN
+F 1 "GND" V 9655 3222 50  0000 R CNN
+F 2 "" H 9650 3350 50  0001 C CNN
+F 3 "" H 9650 3350 50  0001 C CNN
+	1    9650 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5FEFE628
+P 10850 1750
+F 0 "#PWR0109" H 10850 1500 50  0001 C CNN
+F 1 "GND" V 10855 1622 50  0000 R CNN
+F 2 "" H 10850 1750 50  0001 C CNN
+F 3 "" H 10850 1750 50  0001 C CNN
+	1    10850 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x14_Male J2
+U 1 1 5FF492F6
+P 7000 5200
+F 0 "J2" H 6972 5174 50  0000 R CNN
+F 1 "Conn_01x14_Male" H 6972 5083 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x14_P1.27mm_Vertical" H 7000 5200 50  0001 C CNN
+F 3 "~" H 7000 5200 50  0001 C CNN
+	1    7000 5200
+	-1   0    0    -1  
+$EndComp
+Text Label 6800 4800 2    50   ~ 0
+SWDIO
+Text Label 6800 5100 2    50   ~ 0
+P0.00
+Text Label 6800 5200 2    50   ~ 0
+P0.01
+Text Label 6800 5300 2    50   ~ 0
+P0.02
+Text Label 6800 5400 2    50   ~ 0
+P0.03
+Text Label 6800 5500 2    50   ~ 0
+P0.04
+Text Label 6800 5600 2    50   ~ 0
+P0.05
+Text Label 6800 5700 2    50   ~ 0
+P0.06
+Text Label 6800 5800 2    50   ~ 0
+P0.07
+Text Label 6800 5900 2    50   ~ 0
+P0.08
+Text Label 6800 5000 2    50   ~ 0
+P0.30
+Text Label 6800 4900 2    50   ~ 0
+P0.29
+Text Label 6800 4700 2    60   ~ 0
+AVDD
+$Comp
+L power:GND #PWR0110
+U 1 1 5FF7B607
+P 6800 4600
+F 0 "#PWR0110" H 6800 4350 50  0001 C CNN
+F 1 "GND" H 6805 4427 50  0000 C CNN
+F 2 "" H 6800 4600 50  0001 C CNN
+F 3 "" H 6800 4600 50  0001 C CNN
+	1    6800 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x14_Male J3
+U 1 1 5FF7D1D0
+P 8750 5350
+F 0 "J3" H 8858 6131 50  0000 C CNN
+F 1 "Conn_01x14_Male" H 8858 6040 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x14_P1.27mm_Vertical" H 8750 5350 50  0001 C CNN
+F 3 "~" H 8750 5350 50  0001 C CNN
+	1    8750 5350
+	1    0    0    -1  
+$EndComp
+Text Label 8950 5850 0    50   ~ 0
+P0.11
+Text Label 8950 5750 0    50   ~ 0
+P0.09
+Text Label 8950 5350 0    50   ~ 0
+SWCLK
+Text Label 8950 6050 0    50   ~ 0
+P0.20
+Text Label 8950 5950 0    50   ~ 0
+P0.21
+Text Label 8950 5650 0    50   ~ 0
+P0.22
+Text Label 8950 5550 0    50   ~ 0
+P0.23
+Text Label 8950 5450 0    50   ~ 0
+P0.24
+Text Label 8950 5250 0    50   ~ 0
+P0.25
+Text Label 8950 5150 0    50   ~ 0
+P0.28
+$Comp
+L power:GND #PWR0111
+U 1 1 5FF84FA3
+P 8950 4750
+F 0 "#PWR0111" H 8950 4500 50  0001 C CNN
+F 1 "GND" V 8955 4622 50  0000 R CNN
+F 2 "" H 8950 4750 50  0001 C CNN
+F 3 "" H 8950 4750 50  0001 C CNN
+	1    8950 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J4
+U 1 1 5FF9C10C
+P 10150 5450
+F 0 "J4" H 10122 5332 50  0000 R CNN
+F 1 "Conn_01x10_Male" H 10122 5423 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x10_P1.27mm_Vertical" H 10150 5450 50  0001 C CNN
+F 3 "~" H 10150 5450 50  0001 C CNN
+	1    10150 5450
+	-1   0    0    1   
+$EndComp
+Text Label 9950 5050 2    50   ~ 0
+P0.10
+Text Label 9950 5150 2    50   ~ 0
+P0.12
+Text Label 9950 5250 2    50   ~ 0
+P0.13
+Text Label 9950 5350 2    50   ~ 0
+P0.14
+Text Label 9950 5450 2    50   ~ 0
+P0.15
+$Comp
+L power:GND #PWR0112
+U 1 1 5FFA3573
+P 9950 4950
+F 0 "#PWR0112" H 9950 4700 50  0001 C CNN
+F 1 "GND" V 9955 4822 50  0000 R CNN
+F 2 "" H 9950 4950 50  0001 C CNN
+F 3 "" H 9950 4950 50  0001 C CNN
+	1    9950 4950
+	0    1    1    0   
+$EndComp
+Text Label 9950 5550 2    50   ~ 0
+P0.16
+Text Label 9950 5650 2    50   ~ 0
+P0.17
+Text Label 9950 5750 2    50   ~ 0
+P0.18
+Text Label 9950 5850 2    50   ~ 0
+P0.19
 $EndSCHEMATC

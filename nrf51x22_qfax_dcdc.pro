@@ -1,4 +1,4 @@
-update=Tue 29 Dec 2020 11:23:53 PM HKT
+update=Wed 30 Dec 2020 04:43:08 PM HKT
 version=1
 last_client=kicad
 [cvpcb]
@@ -19,15 +19,16 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.152
+MinTrackWidth=0.09999999999999999
 MinViaDiameter=0.6095999999999999
 MinViaDrill=0.3048
 MinMicroViaDiameter=0.508
 MinMicroViaDrill=0.127
 MinHoleToHole=0.25
-TrackWidth1=0.254
+TrackWidth1=0.1
 TrackWidth2=0.16
 TrackWidth3=0.2
+TrackWidth4=0.254
 ViaDiameter1=0.6096
 ViaDrill1=0.3048
 dPairWidth1=0.2
@@ -226,8 +227,8 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.1524
-TrackWidth=0.254
+Clearance=0.1
+TrackWidth=0.1
 ViaDiameter=0.6096
 ViaDrill=0.3048
 uViaDiameter=0.508
@@ -237,7 +238,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Net-(C6-Pad1)
-Clearance=0.1524
+Clearance=0.1
 TrackWidth=0.9398
 ViaDiameter=0.6096
 ViaDrill=0.3048
